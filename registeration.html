@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google-fonts  -->
+    <!-- write google fonts link here  -->
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- wow-css  -->
+    <link rel="stylesheet" href="./css/wow/animate.css">
+    <!-- animate-css  -->
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <!-- bootstrap-css  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- mdb-css  -->
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <!-- style-css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fav-icon  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sayed</title>
+</head>
+
+<body>
+    <div class="container-fluid register">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./images/register.jpg" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="text-dark">create account</h1>
+                <h5 class="text-muted ">go ahead and sign up, let everyone <br> know how awsome you are!</h5>
+                <div id="error"></div>
+                <form action="succeed.html" onsubmit="return validate();" >
+                    <div class="form-input position-relative mb-3">
+                        <input type="text" class="form-control py-4" name="username" id="user" placeholder="username">
+                        <label><i class="fa fa-user"></i></label>
+                    </div>
+                    <div class="form-input position-relative mb-3">
+                        <input type="text" class="form-control py-4 " name="email" id="email" placeholder="e-mail">
+                        <label><i class="fa fa-envelope"></i></label>
+                    </div>
+                    <div class="form-input position-relative mb-3">
+                        <input type="password" class="form-control py-4 " name="password" id="pass" placeholder="password">
+                        <label><i class="fa fa-lock"></i></label>
+                    </div>
+                    <div class="form-input position-relative mb-3">
+                        <input type="password" class="form-control py-4 " name="confirm-password" id="confirmPass"
+                            placeholder="confirm-password">
+                        <label><i class="fa fa-lock"></i></label>
+                    </div>
+                    <input class="btn btn-primary btn-block" type="submit" value="create new account">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- swiper js  -->
+    <script src="./js/swiper-element-bundle.min.js"></script>
+    <!-- mdb js  -->
+    <script src="./js/mdb.min.js"></script>
+    <!-- wow  -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- fontawesome  -->
+    <script src="./js/font-awesome.js"></script>
+    <!-- jquery-js  -->
+    <script src="./js/jquery.js"></script>
+    <!-- popper-js  -->
+    <script src="./js/popper.js"></script>
+    <!-- bootstrab-js  -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- js-main -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

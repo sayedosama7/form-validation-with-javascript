@@ -1,0 +1,113 @@
+/* start global  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End global  */
+
+/* start home  */
+.home {
+    background-color: #f6f8ff;
+    padding: 100px;
+}
+
+.home img {
+    border-radius: 50px;
+    width: 400px;
+}
+
+.home-caption {
+    padding-top: 5%;
+}
+
+@media (max-width:768px) {
+    .home {
+        padding: 30px;
+    }
+
+    .home-caption {
+        text-align: center;
+    }
+}
+
+/* End home  */
+
+/* start register  */
+.register {
+    background-color: #f6f8ff;
+    padding: 30px 100px;
+}
+
+.register img {
+    border-radius: 20px;
+}
+
+.register h5 {
+    line-height: 1.8;
+}
+form {
+    width: 80%;
+}
+form input {
+    width: 100%;
+    border: 2px solid #cccccc56 !important;
+}
+.form-input input {
+    padding: 25px 40px !important;
+}
+
+.form-input label {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+.fa-user,
+.fa-envelope,
+.fa-lock {
+    color: blue;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 16px;
+    padding-left: 5px;
+}
+@media (max-width:768px) {
+.register h1 {
+    margin-top: 20px;
+}
+    form {
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    #error {
+        width: 100% !important;
+    }
+}
+/* End register  */
+
+/* start succeed  */
+.succeed {
+    background-color: #f6f8ff;
+    padding: 50px 100px;
+}
+
+.succeed img {
+    border-radius: 50px;
+}
+
+.succeed .succeed-caption {
+    padding-top: 15%;
+}
+
+/* End succeed  */
+
