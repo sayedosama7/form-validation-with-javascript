@@ -1,9 +1,12 @@
+
 function validate() {
     user = document.getElementById("user").value;
     email = document.getElementById("email").value;
     pass = document.getElementById("pass").value;
     confirmPass = document.getElementById("confirmPass").value;
     error = document.getElementById("error");
+    icon = "<i class='fa-regular fa-face-sad-tear'></i>";
+
     // start error style 
     error.style.backgroundColor = "red";
     error.style.color = "white";
@@ -16,24 +19,24 @@ function validate() {
     // end error style 
 
     if (user == "" && email == "" && pass == "" && confirmPass == "") {
-        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter data";
+        error.innerHTML =icon +  "please enter data";
         return false;
     }
 
     else if (user.length < 5 || user.length > 15) {
-        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter at least 5-15 character in username";
+        error.innerHTML = icon +"please enter at least 5-15 character in username";
         return false;
     }
     else if (email.indexOf("@") == "-1") {
-        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter valid e-mail"
+        error.innerHTML = icon + "please enter valid e-mail"
         return false
     }
     else if (pass.length < 8 ) {
-        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter at least 8 character in password";
+        error.innerHTML = icon + "please enter at least 8 character in password";
         return false;
     }
     else if (pass != confirmPass) {
-        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please matched password";
+        error.innerHTML = icon + "please confirm password";
         return false;
     }
 }
