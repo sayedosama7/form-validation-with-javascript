@@ -16,24 +16,24 @@ function validate() {
     // end error style 
 
     if (user == "" && email == "" && pass == "" && confirmPass == "") {
-        error.innerHTML = "please enter data";
+        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter data";
         return false;
     }
 
     else if (user.length < 5 || user.length > 15) {
-        error.innerHTML = "please enter at least 5-15 character in username";
+        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter at least 5-15 character in username";
         return false;
     }
     else if (email.indexOf("@") == "-1") {
-        error.innerHTML = "please enter valid e-mail"
+        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter valid e-mail"
         return false
     }
     else if (pass.length < 8 ) {
-        error.innerHTML = "please enter at least 8 character in password";
+        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please enter at least 8 character in password";
         return false;
     }
     else if (pass != confirmPass) {
-        error.innerHTML = "please matched password";
+        error.innerHTML = "<i class='fa-regular fa-face-sad-tear'></i> please matched password";
         return false;
     }
 }
